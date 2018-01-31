@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resource :products, except: [:new, :edit]
+      resources :products, except: [:new, :edit]
     end
   end
 end
